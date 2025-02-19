@@ -1,0 +1,81 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titling}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{axiom}{Axiom}
+\newcommand{\lcm}{\emph{lcm}}
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS/MATH 113, SPRING 2025}{Pset 06: Sets}{\theauthor}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+% \printanswers %Uncomment this line
+
+\title{Problem Set 06: Sets}
+\author{Blingblong} % <=== replace with your student ID, e.g. xy012345
+\date{CS/MATH 113 Discrete Mathematics\\Habib University\\Spring 2025}
+
+\boxedpoints
+
+\begin{document}
+\maketitle      
+
+
+\section*{Problems}
+\begin{questions}
+    \question Show that $\emptyset$, $\{\emptyset\}$, $\{\{\emptyset\}\}$ and $\{\emptyset, \{\emptyset\}\}$ are all different sets.
+    \begin{solution}
+    % Enter solution here
+    \end{solution}
+
+    \question Let $A$ and $B$ be some sets, show that $P(A) \subseteq P(B) \iff A \subseteq B$.
+    \begin{solution}
+    % Enter solution here
+    \end{solution}
+
+    \question Let $A$, $B$, $C$ and $D$ be some nonempty sets. Show that $A \times B \subseteq C \times D$ if and only if $A \subseteq C$ and $B \subseteq D$.  Furthermore show that $A \times B = C \times D$ if and only if $A = C$ and $B = D$. What happens if restriction about them being nonempty sets is removed? Does the result still hold?
+    \begin{solution}
+    % Enter solution here
+    \end{solution}
+
+    \question Imagine a collection, $S$, of sets. And let $I$ be some index set (this just some set whose elements we'll use to index the elements of $S$) such that for every element $\alpha \in I$ we have a set $S_\alpha\in S$ 
+     
+    Union and intersection involving collections of sets are defined as follows.
+    \begin{align*}
+    \bigcup_{\alpha \in I}S_\alpha = \{x\mid \exists \alpha \in I : x \in S_\alpha\}\\
+    \bigcap_{\alpha \in I}S_i = \{x\mid\forall \alpha \in I\; (x \in S_\alpha)\}
+    \end{align*}
+
+Show that for any set $T$
+    \[
+      \bigcup_{\alpha \in I}(T \cap S_\alpha) = T \cap \left(\bigcup_{\alpha\in I}S_\alpha  \right)
+      \text{ and }
+      \bigcap_{\alpha\in I}(T \cup S_\alpha) = T \cup \left(\bigcap_{\alpha\in I}S_\alpha  \right).
+    \]
+    
+    \begin{solution}
+      % Enter your solution here.
+    \end{solution}
+
+
+
+\end{questions}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
