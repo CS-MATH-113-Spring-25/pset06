@@ -1,4 +1,4 @@
-# Problem set 05: Advanced Proofs
+# Problem set 06: Sets
 # CS/MATH 113 Discrete Mathematics, Spring 2025
 ***
 
